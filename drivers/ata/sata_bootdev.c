@@ -37,7 +37,7 @@ static int sata_bootdev_hunt(struct bootdev_hunter *info, bool show)
 	return 0;
 }
 
-struct bootdev_ops sata_bootdev_ops = {
+static const struct bootdev_ops sata_bootdev_ops = {
 };
 
 static const struct udevice_id sata_bootdev_ids[] = {
