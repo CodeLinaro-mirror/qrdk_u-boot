@@ -400,7 +400,7 @@ UCLASS_DRIVER(virtio) = {
 	.per_device_auto	= sizeof(struct virtio_dev_priv),
 };
 
-struct bootdev_ops virtio_bootdev_ops = {
+static const struct bootdev_ops virtio_bootdev_ops = {
 };
 
 static const struct udevice_id virtio_bootdev_ids[] = {
