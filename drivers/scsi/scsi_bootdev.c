@@ -37,7 +37,7 @@ static int scsi_bootdev_hunt(struct bootdev_hunter *info, bool show)
 	return 0;
 }
 
-struct bootdev_ops scsi_bootdev_ops = {
+static const struct bootdev_ops scsi_bootdev_ops = {
 };
 
 static const struct udevice_id scsi_bootdev_ids[] = {
